@@ -52,7 +52,7 @@ Relationship to rawssg
 
 The main rawssg repository can be found at:
 
-[https://github.com/neuxdotdev/rawssg.git](https://github.com/neuxdotdev/rawssg.git)
+[https://github.com/neuxdotdev/rawssg.git]
 
 The rawssg binary or higher-level interface consumes librawssg as its engine layer. Any change within this library directly impacts how content is processed and generated across the ecosystem.
 
