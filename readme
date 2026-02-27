@@ -1,7 +1,6 @@
 LIBRAWSSG
 
 About
-
 librawssg is the core engine library of the rawssg project.
 
 This repository contains the fundamental logic responsible for parsing, processing, and building static output within the rawssg ecosystem. It serves as the central orchestration layer that coordinates content transformation and output generation.
@@ -9,20 +8,18 @@ This repository contains the fundamental logic responsible for parsing, processi
 librawssg is not intended to function as a user-facing tool. It exists as an internal engine component that powers the higher-level rawssg system.
 
 Core Responsibilities
-
 Within the rawssg architecture, librawssg is responsible for:
 
-* Parsing input content into structured representations
-* Managing internal data models
-* Orchestrating the build pipeline
-* Handling file system operations related to generation
-* Coordinating integration with the template layer
-* Providing a stable API for UI and other ecosystem components
+· Parsing input content into structured representations
+· Managing internal data models
+· Orchestrating the build pipeline
+· Handling file system operations related to generation
+· Coordinating integration with the template layer
+· Providing a stable API for UI and other ecosystem components
 
 All non-UI, non-presentation logic resides in this library.
 
 Architectural Position
-
 librawssg sits at the center of the rawssg ecosystem.
 
 The UI layer interacts with librawssg to trigger operations and retrieve structured data.
@@ -31,33 +28,29 @@ The template layer receives processed data from librawssg to render final static
 
 This separation ensures:
 
-* Clear responsibility boundaries
-* Predictable system behavior
-* Easier long-term maintenance
-* Independent evolution of UI and template systems
+· Clear responsibility boundaries
+· Predictable system behavior
+· Easier long-term maintenance
+· Independent evolution of UI and template systems
 
 Design Philosophy
-
 The engine is designed around the following principles:
 
-* Deterministic build behavior
-* Minimal hidden state
-* Clear data flow between stages
-* Modular internal components
-* Performance-conscious implementation using Rust
+· Deterministic build behavior
+· Minimal hidden state
+· Clear data flow between stages
+· Modular internal components
+· Performance-conscious implementation using Rust
 
 librawssg avoids embedding presentation logic or UI concerns. Its responsibility is processing and orchestration only.
 
 Relationship to rawssg
-
 The main rawssg repository can be found at:
-
-[https://github.com/neuxdotdev/rawssg.git]
+https://github.com/neuxdotdev/rawssg.git
 
 The rawssg binary or higher-level interface consumes librawssg as its engine layer. Any change within this library directly impacts how content is processed and generated across the ecosystem.
 
 Note
-
 librawssg represents the foundation of the rawssg project. Stability and clarity are prioritized over rapid feature expansion.
 
 Architectural decisions within this repository influence the long-term direction of the entire ecosystem.
